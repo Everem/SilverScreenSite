@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=BenchNine|Dancing+Script');
+/* CSS for the NYC website */
+
+/* ------- Layout -------- */
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'BenchNine', sans-serif;
+  font-size: 1.2em;
+  color: #555;
+  margin: 0;
+  padding: 0;
+}
+
+#banner {
+  position: relative;
+  height: 100%;
+}
+
+#banner-img {
+  width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: top;
+}
+
+#banner-info {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 2px 1px #333;
+  overflow-y: scroll;
+  -moz-box-shadow: inset 0 -5em 5em -5em rgba(33, 159, 225, 1);
+  -webkit-box-shadow: inset 0 -5em 5em -5em rgba(33, 159, 225, 1);
+  box-shadow: inset 0 -5em 5em -5em rgba(33, 159, 225, 1);
+}
+
+#banner-info-txt {
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 20%;
+}
+
+.button {
+  background-color: #555;
+  font-size: 1.5em;
+  font-family: inherit;
+  border: 2px solid rgba(33, 159, 225, 1);
+  color: white;
+  box-shadow: 4px 4px 0px #333;
+  text-align: center;
+  text-decoration: none;
+  padding: .3em;
+  border-radius: .2em;
+  position: relative;
+}
+
+.button:hover {
+  left: 2px;
+  top: 2px;
+  box-shadow: 2px 2px 0px #333;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline:0;
+}
+
+.button:active {
+  position: relative;
+  left: 4px;
+  top: 4px;
+  box-shadow: none;
+}
+
+#banner-btn {
+  position: fixed;
+  font-size: .8em;
+  top: 1em;
+  right: 1em;
+  z-index: 2;
+}
+
+#banner-btn-play {
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
+#banner-btn-play img {
+  width: 15%;
+  height: auto;
+}
+
+#banner-btn-play img:hover {
+  opacity: .95;
+}
+
+#title {
+  position: fixed;
+  top: -.1em;
+  left: .5em;
+  font-family: 'Dancing Script', cursive;
+}
+
+#title a {
+  text-decoration: none;
+  font-size: 2em;
+  line-height: .6em;
+  color: rgba(88, 88, 88, .8);
+  text-shadow: 3px 2px rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#title a:hover {
+  color: rgba(255, 0, 119, 1);
+}
+
+.smaller {
+  font-size: 1.5em;
+}
+
+#main {
+  background: rgba(119, 0, 255, 1);
+  padding: .5em;
+  margin-top: -.5em;
+}
+
+.col {
+  flex: 1;
+  margin: .1em;
+  padding: 1em;
+  margin-top: .4em;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.electric-bg {
+  background: white;
+  border: 4px solid rgba(33, 159, 225, 1);
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.flexbox img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+#footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  clear: both;
+}
+
+/* ------ Navbar ------- */
+ 
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 7.5%;
+  background-color: rgba(255, 255, 255, .95);
+  /*border-bottom: 2px solid rgba(119, 0, 255, 1);*/
+  /*box-shadow: 0px 0px 10px 2px rgba(0,0,0,.4);*/
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+ 
+nav ul {
+  list-style-type: none;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+ 
+nav li {
+  float: left;
+  margin-right: 0em;
+  border-right: 1px solid #aaa;
+  padding: 0 1em;
+}
+ 
+nav li:last-child {
+  border-right: none;
+}
+ 
+nav li a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #555;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+ 
+nav li a:hover {
+  color: rgba(255, 0, 119, 1);
+}
+ 
+nav li.active a {
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Silver screen</title>
+    <!--<link rel="icon" type="image/png" href="images/nyc-logo.png">-->
+
+    <!-- media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css">
+
+    <!-- media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css">
+
+    <!-- media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="nav">
+        <h1 id="title"><a href="#">Silver Screen</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Demo</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+          <div id="banner-btn">
+            <button class="button">Choose a plan</button>
+          </div>
+        </nav>
+      </div><!-- close #nav -->
+    
+      <div id="banner">
+        <img id="banner-img" src="./images/maxresdefault.jpg" width="1200" height="400"></img>
+        <div id="banner-info">
+          <div id="banner-info-txt">
+            <h1>Welcome to your new cutting room.</h1>
+            <div id="banner-btn-play">
+              <a href="#"><img src="./images/play-button.png" width="120" height="120"></img></a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="flexbox">
+          <div class="flexbox col electric-bg">
+            <h2>Introduction</h2>
+            <p>New York is the most populous city in the United States and the center of the New York Metropolitan Area, one of the most populous urban agglomerations in the world. The city is referred to as New York City...</p>
+          </div>
+
+          <div class="flexbox col electric-bg">
+            <h2>About</h2>
+            <p>Located on one of the world's largest natural harbors, New York City consists of...</p>
+            <img src="./images/unity-logo.png" width="200" height="80"></img>
+          </div>
+
+          <div class="flexbox col electric-bg">
+            <h2>History</h2>
+            <p>New York traces its roots to its 1624 founding as a trading post by colonists of the Dutch Republic and was named New Amsterdam in 1626. The city and its surroundings came under English control in 1664 and were renamed New York after King... </p>
+          </div>
+
+          <div class="flexbox col electric-bg">
+            <h2>Some fourth thing</h2>
+            <p>New York traces its roots to its 1624 founding as a trading post by colonists of the Dutch Republic and was named New Amsterdam in 1626. The city and its surroundings came under English control in 1664 and were renamed New York after King Charles II...</p>
+          </div>
+        </div>
+      </div> <!-- close #main -->
+    </div> <!-- close #container -->
+
+    <script>
+      function init() {
+          window.addEventListener('scroll', function(e){
+              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                  shrinkOn = 100;
+              if (distanceY > shrinkOn) {
+                  $('#title').addClass("smaller");
+              } else {
+                  $('#title').removeClass("smaller");
+              }
+          });
+      }
+      window.onload = init();
+    </script>
+  </body>
+</html>
