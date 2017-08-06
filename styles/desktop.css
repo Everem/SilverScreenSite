@@ -1,32 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=BenchNine|Dancing+Script');
-/* CSS for the NYC website */
-
-/***** COLORS *****
-VIOLET
-#a121e1
-rgb(161, 33, 225)
-
-BLUE
-#219fe1
-rgb(33, 159, 225)
-
-RED
-#d30023
-rgb(211, 0, 35)
-
-ORANGE
-#e16121
-rgb(225, 97, 33)
-
-YELLOW
-#e1c121
-rgb(225, 193, 33)
-
-*/
-
-
-/* ------- Layout -------- */
-
+@import url("https://fonts.googleapis.com/css?family=BenchNine|Dancing+Script");
 html {
   width: 100%;
   height: 100%;
@@ -35,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'BenchNine', sans-serif;
+  font-family: "BenchNine", sans-serif;
   font-size: 1.2em;
   color: #555;
   margin: 0;
@@ -88,27 +60,24 @@ body {
   background-color: #555;
   font-size: 1.5em;
   font-family: inherit;
-  border: 2px solid rgba(33, 159, 225, 1);
+  border: 2px solid #219fe1;
   color: white;
   box-shadow: 4px 4px 0px #333;
   text-align: center;
   text-decoration: none;
-  padding: .3em;
-  border-radius: .2em;
+  padding: 0.3em;
+  border-radius: 0.2em;
   position: relative;
 }
-
 .button:hover {
   left: 2px;
   top: 2px;
   box-shadow: 2px 2px 0px #333;
   cursor: pointer;
 }
-
 .button:focus {
-  outline:0;
+  outline: 0;
 }
-
 .button:active {
   position: relative;
   left: 4px;
@@ -118,7 +87,7 @@ body {
 
 #banner-btn {
   position: fixed;
-  font-size: .8em;
+  font-size: 0.8em;
   top: 1em;
   right: 1em;
   z-index: 2;
@@ -130,36 +99,32 @@ body {
   right: 0;
   padding: 0;
 }
-
 #banner-btn-play img {
   width: 15%;
   height: auto;
 }
-
 #banner-btn-play img:hover {
-  opacity: .95;
+  opacity: 0.95;
 }
 
 #title {
   position: fixed;
-  top: -.1em;
-  left: .5em;
-  font-family: 'Dancing Script', cursive;
+  top: -0.1em;
+  left: 0.5em;
+  font-family: "Dancing Script", cursive;
 }
-
 #title a {
   text-decoration: none;
   font-size: 2em;
-  line-height: .6em;
-  color: rgba(88, 88, 88, .8);
-  text-shadow: 3px 2px rgba(255, 255, 255, 1);
+  line-height: 0.6em;
+  color: rgba(88, 88, 88, 0.8);
+  text-shadow: 3px 2px white;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 #title a:hover {
   color: #e16121;
 }
@@ -170,22 +135,22 @@ body {
 
 #main {
   background: #a121e1;
-  padding: .5em;
-  margin-top: -.5em;
+  padding: 0.5em;
+  margin-top: -0.5em;
 }
 
 .col {
   flex: 1;
-  margin: .1em;
+  margin: 0.1em;
   padding: 1em;
-  margin-top: .4em;
+  margin-top: 0.4em;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 
 .electric-bg {
   background: white;
-  border: 4px solid rgba(33, 159, 225, 1);
+  border: 4px solid #219fe1;
 }
 
 .flexbox {
@@ -194,7 +159,6 @@ body {
   display: flex;
   overflow: hidden;
 }
-
 .flexbox img {
   max-height: 100%;
   max-width: 100%;
@@ -208,7 +172,6 @@ body {
 }
 
 /* ------ Navbar ------- */
- 
 #nav {
   position: fixed;
   top: 0;
@@ -216,34 +179,28 @@ body {
   right: 0;
   z-index: 2;
   height: 7.5%;
-  background-color: rgba(255, 255, 255, .95);
-  /*border-bottom: 2px solid rgba(119, 0, 255, 1);*/
-  /*box-shadow: 0px 0px 10px 2px rgba(0,0,0,.4);*/
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 nav {
   display: flex;
   justify-content: center;
 }
- 
 nav ul {
   list-style-type: none;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
- 
 nav li {
   float: left;
   margin-right: 0em;
   border-right: 1px solid #aaa;
   padding: 0 1em;
 }
- 
 nav li:last-child {
   border-right: none;
 }
- 
 nav li a {
   text-decoration: none;
   font-size: 1.1em;
@@ -255,11 +212,9 @@ nav li a {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
- 
 nav li a:hover {
   color: #e16121;
 }
- 
 nav li.active a {
   font-weight: bold;
   color: #333;
